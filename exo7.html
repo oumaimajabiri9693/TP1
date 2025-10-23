@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription avancé</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 500px;
+            margin: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Créer un compte</h1>
+    <form action="#" method="post">
+        <!-- Section Identité -->
+        <fieldset>
+            <legend>Identité</legend>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="date_naissance">Date de naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance" min="1900-01-01" max="2025-10-23" required>
+        </fieldset>
+
+        <!-- Section Contact -->
+        <fieldset>
+            <legend>Contact</legend>
+            <label for="telephone">Téléphone (Maroc) :</label>
+            <input type="tel" id="telephone" name="telephone" pattern="^0[5-7]\d{8}$" title="Format : 06XXXXXXXX ou 05XXXXXXXX" required>
+
+            <label for="site_perso">Site personnel :</label>
+            <input type="url" id="site_perso" name="site_perso">
+        </fieldset>
+
+        <!-- Section Sécurité -->
+        <fieldset>
+            <legend>Sécurité</legend>
+            <label for="mot_de_passe">Mot de passe :</label>
+            <input type="password" id="mot_de_passe" name="mot_de_passe" minlength="8" required>
+
+            <label for="confirmation">Confirmation :</label>
+            <input type="password" id="confirmation" name="confirmation" required>
+        </fieldset>
+
+        <!-- Section Préférences -->
+        <fieldset>
+            <legend>Préférences</legend>
+            <label for="newsletter">Recevoir la newsletter :</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+
+            <label>Rôle :</label>
+            <input type="radio" id="etudiant" name="role" value="etudiant">
+            <label for="etudiant">Étudiant</label>
+            <input type="radio" id="pro" name="role" value="pro">
+            <label for="pro">Professionnel</label>
+        </fieldset>
+
+        <!-- Bouton Soumettre -->
+        <button type="submit">Créer un compte</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 05</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        caption {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Inventaire boutique</caption>
+        <thead>
+            <tr>
+                <th>Produit</th>
+                <th>Catégorie</th>
+                <th>Prix (€)</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Ligne 1 -->
+            <tr>
+                <td>Laptop A</td>
+                <td rowspan="2">Informatique</td>
+                <td>799</td>
+                <td>12</td>
+            </tr>
+            <!-- Ligne 2 -->
+            <tr>
+                <td>Écran C</td>
+                <td>189</td>
+                <td>23</td>
+            </tr>
+            <!-- Ligne 3 -->
+            <tr>
+                <td>Souris B</td>
+                <td rowspan="2">Accessoires</td>
+                <td>19</td>
+                <td>57</td>
+            </tr>
+            <!-- Ligne 4 -->
+            <tr>
+                <td>Clavier D</td>
+                <td>39</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total articles distincts : 4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

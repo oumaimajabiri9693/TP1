@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        article {
+            flex: 1 1 calc(50% - 20px);
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        article h2 {
+            margin-top: 0;
+        }
+        article time {
+            font-size: 0.9em;
+            color: #666;
+            display: block;
+            margin-bottom: 10px;
+        }
+        article a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        article a:hover {
+            text-decoration: underline;
+        }
+        aside {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #212529;
+            color: white;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="c:\Users\dell\Downloads\Brand_Guidelines_hero_2x.webp" alt="Logo du site">
+            <h1>Mon Mini-Blog</h1>
+        </div>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#articles">Articles</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Article 1 -->
+        <article>
+            <h2>8 Time Management Tips for Students</h2>
+            <time datetime="2022-10-14">Publié le 14 Oct 2022</time>
+            <p>
+                Don't let a hectic schedule get the better of you with these time management tips.
+            <a href="#">Lire plus</a>
+        </article>
+
+        <!-- Article 2 -->
+        <article>
+            <h2>Reading Literature Makes Us Smarter and Nicer</h2>
+            <time datetime="2013-06-03">Publié le 3 juin 2013</time>
+            <p>
+                "Deep reading" is vigorous exercise from the brain and increases our real-life capacity for empathy
+            </p>
+            <a href="#">Lire plus</a>
+        </article>
+    </main>
+
+    <!-- Sidebar -->
+    <aside>
+        <h3>À propos</h3>
+        <p>
+            Bienvenue sur mon mini-blog ! Ici, vous trouverez des articles intéressants sur divers sujets. 
+            N'hésitez pas à me contacter si vous avez des questions.
+        </p>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        &copy; Tous droits réservés | Année <span id="2025"></span>
+    </footer>
+</body>
+</html>
